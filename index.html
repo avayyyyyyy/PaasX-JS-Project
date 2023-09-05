@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body class="">
+    <nav class="flex items-center justify-between p-8 bg-black h-4 text-xl">
+        <ul class="text-white">
+            <li>PassX</li>
+        </ul>
+        <ul class="flex gap-5 text-white hover:cursor-pointer">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <main class="p-8">
+        <h1 class="text-center font-bold text-5xl mb-5">Password Manager</h1>
+        <p class="text-center font-semibold w-9/12 m-auto">We're thrilled to have you here. Your digital life contains a
+            myriad
+            of
+            passwords, and we
+            know how challenging it can be
+            to manage them all. That's why we're here to make it easy for you.</p>
+        <h3 class="font-bold text-2xl mb-5">Your Passwords</h3>
+        <table>
+            <tr>
+                <th class="p-1">Website</th>
+                <th class="p-1">Username</th>
+                <th class="p-1">Password</th>
+                <th class="p-1">Delete</th>
+            </tr>
+        </table>
+        <h3 class="font-bold text-2xl my-5">Add a Password</h3>
+        <form action="" method="post">
+            <label class="font-semibold" for="Website">Website : </label>
+            <input class="border-2 border-black rounded-md p-1" type="text" name="Website" id="Website" required>
+            <br><br>
+            <label class="font-semibold" for="Username">Username : </label>
+            <input class="border-2 border-black rounded-md p-1" type="text" name="Username" id="Username" required>
+            <br><br>
+            <label class="font-semibold" for="Password">Password : </label>
+            <input class="border-2 border-black rounded-md p-1" type="password" name="Password" id="Password" required>
+            <br><br>
+            <input class="border-4 p-2 border-black rounded-md text-black font-semibold hover:cursor-pointer"
+                type="submit" id="btn" value="submit">
+        </form>
+    </main>
+    <!-- script -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
